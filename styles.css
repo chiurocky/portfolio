@@ -1,0 +1,243 @@
+:root {
+    --font-primary: "adso", helvetica, arial, sans-serif;
+    --font-secondary: "Inter", helvetica, arial, sans-serif;
+
+    --grey-0: #ffffff;
+    --grey-1: #f7f7f7;
+    --grey-2: #e6e6e6;
+    --grey-3: #d2d2d2;
+    --grey-4: #969696;
+    --grey-5: #7d7d7d;
+    --grey-6: #484848;
+    --grey-7: #191919;
+    --grey-8: #131313;
+    --grey-9: #000000;
+
+    --brand-positive: green;
+    --brand-negative: red;
+    --brand-alert: yellow;
+    --brand-focus: rgb(0, 106, 255);
+}
+
+::selection {
+    color: #962828;
+    background: #f7bc1b;
+}
+
+.light {
+    --surface-primary: var(--grey-0);
+    --surface-secondary:var(--grey-1);
+    --surface-tetiary: var(--grey-2);
+    --surface-invert: var(--grey-9);
+
+    --text-primary: var(--grey-9);
+    --text-secondary: var(--grey-6);
+    --text-tetiary: var(--grey-4);
+    --text-invert: var(--grey-0);
+
+    --border-primary: var(--grey-2);;
+    --border-secondary: var(--grey-3);
+
+    transition: all 500ms ease;
+}
+
+.dark {
+    --surface-primary: var(--grey-9);
+    --surface-secondary: var(--grey-8);
+    --surface-tetiary: var(--grey-7);
+    --surface-invert: var(--grey-0);
+
+    --text-primary: var(--grey-0);
+    --text-secondary: var(--grey-3);
+    --text-tetiary: var(--grey-4);
+    --text-invert: var(--grey-9);
+
+    --border-primary: var(--grey-8);
+    --border-secondary: var(--grey-7);
+
+    transition: all 500ms ease;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secondary);
+    color: var(--text-primary);
+}
+
+body {
+    background-color: var(--surface-secondary);
+    color: var(--text-primary);
+    width: 100vw;
+}
+
+button {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    border: none;
+    border-radius: 4px;
+    color: var(--text-secondary);
+    background-color: var(--surface-secondary);
+    padding: .75rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 80%;
+    }
+}
+
+/* NAV */
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 500;
+
+    & p {
+        font-family: var(--border-primary);
+    }
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .4rem;
+}
+
+.social-btn {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--surface-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 7px;
+
+    /* &:hover {
+        transform: translateY(-2px);
+        transition: transform 200ms ease-in-out;
+    } */
+}
+
+/* HERO */
+.main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h1 {
+        font-family: var(--font-primary);
+        font-weight: 400;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    & p {
+        font-family: var(--font-secondary);
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
+/* Theme Toggle */
+
+.theme-switcher {
+    width: 3.8rem;
+    height: 2rem;
+    background-color: var(--surface-tetiary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+
+    position: relative;
+
+    .light-icon {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+    }
+
+    .dark-icon {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+    }
+}
+
+.toggle {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--surface-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 3rem;
+    margin: 1px;
+}
+
+.slideRight {
+    transform: translateX(28px);
+    transition: transform 400ms ease-in-out;
+}
+
+.slideLeft {
+    transform: translateX(0px);
+    transition: transform 400ms ease-in-out;
+}
+
+
+/* Projects */
+
+.projects-container {
+    width: 60%;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project {
+    width: 80%;
+    height: 500px;
+    background-color: var(--surface-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 1.5rem;
+}
+
