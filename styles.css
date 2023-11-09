@@ -116,6 +116,20 @@ nav {
     }
 }
 
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rc-icon {
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+    cursor: pointer;
+}
+
 .right-nav {
     display: flex;
     justify-content: space-evenly;
@@ -135,6 +149,13 @@ nav {
     align-items: center;
 
     padding: 7px;
+
+    transition: transform 120ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
 
     /* &:hover {
         transform: translateY(-2px);
@@ -225,24 +246,29 @@ nav {
 
 .projects-container {
     width: 100%;
-    height: 2200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
     gap: .75rem;
     padding: 3rem;
 }
 
 .project {
-    width: 100%;
-    height: 500px;
+    
     background-color: var(--surface-primary);
     border: 1px solid var(--border-primary);
     border-radius: .5rem;
     transition: transform 120ms ease-in-out;
     cursor: pointer;
+    overflow: hidden;
 
     &:hover {
         transform: translateY(-10px);
+    }
+
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 }
 
