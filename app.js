@@ -30,3 +30,8 @@ themeToggleElem.addEventListener('click', () => {
 document.querySelector('.assetdash').addEventListener('click', () => {
     window.open('https://chiurocky.github.io/asset-dash/', '_blank');
 })
+
+document.querySelector('.allies').addEventListener('click', () => {
+    window.open('https://chiurocky.github.io/allies-proto/', '_blank');
+})
+

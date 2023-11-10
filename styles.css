@@ -179,11 +179,15 @@ nav {
     justify-content: center;
     align-items: center;
 
+    & span {
+        font-size: 1.1rem;
+    }
+
     & button {
         background: var(--surface-tetiary);
         color: var(--text-secondary);
         border-bottom: 1px solid var(--border-secondary);
-        width: 7rem;
+        width: 9rem;
     }
 }
 
@@ -307,4 +311,35 @@ footer {
         color: var(--text-tetiary);
         cursor: pointer;
     }
+}
+
+/* PROJECT DETAILS projects.html */
+
+.details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & button {
+        margin-top: 2rem;
+        width: 4.5rem;
+    }
+
+    & h1 {
+        font-family: var(--font-primary);
+        font-weight: 400;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    & p {
+        font-family: var(--font-secondary);
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+    }
+
 }
