@@ -27,3 +27,6 @@ themeToggleElem.addEventListener('click', () => {
     // document.body.classList.toggle('dark');
 })
 
+document.querySelector('.assetdash').addEventListener('click', () => {
+    window.open('https://chiurocky.github.io/asset-dash/', '_blank');
+})

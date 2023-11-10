@@ -26,7 +26,7 @@
 
 .light {
     --surface-primary: var(--grey-0);
-    --surface-secondary:var(--grey-1);
+    --surface-secondary: var(--grey-1);
     --surface-tetiary: var(--grey-2);
     --surface-invert: var(--grey-9);
 
@@ -35,7 +35,8 @@
     --text-tetiary: var(--grey-4);
     --text-invert: var(--grey-0);
 
-    --border-primary: var(--grey-2);;
+    --border-primary: var(--grey-2);
+    ;
     --border-secondary: var(--grey-3);
 
     transition: all 500ms ease;
@@ -82,6 +83,11 @@ body {
     width: 100vw;
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
 button {
     font-family: var(--font-secondary);
     font-weight: 400;
@@ -91,9 +97,11 @@ button {
     background-color: var(--surface-secondary);
     padding: .75rem 1rem;
     cursor: pointer;
+    transition: transform 120ms ease-in-out;
 
     &:hover {
         opacity: 80%;
+        transform: translateY(-2px);
     }
 }
 
@@ -170,6 +178,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & button {
+        background: var(--surface-tetiary);
+        color: var(--text-secondary);
+        border-bottom: 1px solid var(--border-secondary);
+        width: 7rem;
+    }
 }
 
 .hero-container {
@@ -253,7 +268,7 @@ nav {
 }
 
 .project {
-    
+
     background-color: var(--surface-primary);
     border: 1px solid var(--border-primary);
     border-radius: .5rem;
@@ -262,7 +277,7 @@ nav {
     overflow: hidden;
 
     &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-6px);
     }
 
     & img {
@@ -272,3 +287,24 @@ nav {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+
+    & p {
+        color: var(--text-tetiary);
+    }
+
+    & span {
+        color: var(--brand-negative);
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--text-tetiary);
+        cursor: pointer;
+    }
+}
