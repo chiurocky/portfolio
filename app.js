@@ -49,15 +49,15 @@ document.querySelector('.allies').addEventListener('click', () => {
 // })
 
 document.querySelector('.maze').addEventListener('click', () => {
-    window.open('./prj/maze.html', '_blank');
+    window.open('./prj/maze', '_blank');
 })
 
 document.querySelector('.instapaper').addEventListener('click', () => {
-    window.open('./prj/instapaper.html', '_blank');
+    window.open('./prj/instapaper', '_blank');
 })
 
 document.querySelector('.cw').addEventListener('click', () => {
-    window.open('./prj/cw.html', '_blank');
+    window.open('./prj/cw', '_blank');
 })
 
 document.querySelector('.alibaba').addEventListener('click', () => {
@@ -65,11 +65,11 @@ document.querySelector('.alibaba').addEventListener('click', () => {
 })
 
 document.querySelector('.alibaba').addEventListener('click', () => {
-    window.open('./prj/allies.html', '_blank');
+    window.open('./prj/allies', '_blank');
 })
 
 document.querySelector('.mealpal').addEventListener('click', () => {
-    window.open('./prj/mealpal.html', '_blank');
+    window.open('./prj/mealpal', '_blank');
 })
 
 // document.querySelectorAll('.dribbble').addEventListener('click', () => {
