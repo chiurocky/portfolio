@@ -32,10 +32,14 @@ document.querySelector('.assetdash').addEventListener('click', () => {
 })
 
 document.querySelector('.allies').addEventListener('click', () => {
-    window.open('https://chiurocky.github.io/allies-proto/', '_blank');
+    window.open('./prj/allies.html', '_blank');
 })
 
 // PROJECTS DETAILS
+
+document.querySelector('.rc-icon').addEventListener('click', () => {
+    window.open('https://chiurocky.github.io/portfolio/', '_blank');
+})
 
 document.querySelector('.maze').addEventListener('click', () => {
     window.open('./prj/maze.html', '_blank');
@@ -51,4 +55,27 @@ document.querySelector('.cw').addEventListener('click', () => {
 
 document.querySelector('.alibaba').addEventListener('click', () => {
     window.open('./prj/alibaba', '_blank');
+})
+
+document.querySelector('.alibaba').addEventListener('click', () => {
+    window.open('./prj/allies.html', '_blank');
+})
+
+document.querySelector('.mealpal').addEventListener('click', () => {
+    window.open('./prj/mealpal.html', '_blank');
+})
+
+// document.querySelectorAll('.dribbble').addEventListener('click', () => {
+//     window.open('https://dribbble.com/chiurocky', '_blank');
+// })
+
+const dribz = document.querySelectorAll('.dribbble');
+dribz.forEach(d => {
+    d.addEventListener('click', () => {
+        window.open('https://dribbble.com/chiurocky', '_blank');
+    })
+})
+
+document.querySelector('.blender').addEventListener('click', () => {
+    window.open('./prj/blender-sculpt.html', '_blank');
 })

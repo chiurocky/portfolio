@@ -297,7 +297,7 @@ nav {
     }
 }
 
-.cw-ixd {
+.cw-ixd, .blender {
     background-color: black;
 }
 
@@ -327,6 +327,7 @@ footer {
 
 .details {
     width: 80%;
+    max-width: 900px;;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -365,6 +366,10 @@ footer {
 
     & img {
         
+        width: 100%;
+    }
+
+    & video {
         width: 100%;
     }
 
