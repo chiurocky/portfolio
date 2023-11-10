@@ -135,7 +135,7 @@ nav {
     width: 40px;
     height: 40px;
     z-index: 3;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .right-nav {
@@ -349,11 +349,13 @@ footer {
 
     & p {
         font-family: var(--font-secondary);
+        color: var(--text-secondary);
         font-weight: 300;
-        font-size: 1.25rem;
+        font-size: 1rem;
         line-height: 2rem;
         margin-bottom: 3rem;
-        max-width: 600px;
+        max-width: 860px;
+        line-height: 1.75rem;
     }
 
     .details-img-container {
