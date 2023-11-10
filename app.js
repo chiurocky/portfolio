@@ -49,6 +49,6 @@ document.querySelector('.cw').addEventListener('click', () => {
     window.open('./prj/cw.html', '_blank');
 })
 
-document.querySelector('.cw').addEventListener('click', () => {
+document.querySelector('.alibaba').addEventListener('click', () => {
     window.open('./prj/alibaba', '_blank');
 })
