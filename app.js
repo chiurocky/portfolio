@@ -40,3 +40,11 @@ document.querySelector('.allies').addEventListener('click', () => {
 document.querySelector('.maze').addEventListener('click', () => {
     window.open('./pages/prj-maze.html', '_blank');
 })
+
+document.querySelector('.instapaper').addEventListener('click', () => {
+    window.open('./pages/prj-instapaper.html', '_blank');
+})
+
+document.querySelector('.cw').addEventListener('click', () => {
+    window.open('./pages/prj-cw.html', '_blank');
+})

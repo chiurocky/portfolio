@@ -289,6 +289,11 @@ nav {
         object-fit: cover;
         width: 100%;
         height: 100%;
+    }  
+    
+    & video {
+        width: 100%;
+        aspect-ratio: 4/3;
     }
 }
 
@@ -343,6 +348,7 @@ footer {
         font-size: 1.25rem;
         line-height: 2rem;
         margin-bottom: 3rem;
+        max-width: 600px;
     }
 
     .details-img-container {
