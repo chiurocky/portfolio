@@ -35,6 +35,10 @@ document.querySelector('.allies').addEventListener('click', () => {
     window.open('./prj/allies.html', '_blank');
 })
 
+document.querySelector('.allies-2').addEventListener('click', () => {
+    window.open('https://chiurocky.github.io/allies-proto/', '_blank');
+})
+
 // PROJECTS DETAILS
 
 // document.querySelector('.rc-icon').addEventListener('click', () => {
@@ -48,8 +52,15 @@ document.querySelector('.allies').addEventListener('click', () => {
 //     })
 // })
 
-document.querySelector('.maze').addEventListener('click', () => {
-    window.open('./prj/maze', '_blank');
+// document.querySelector('.maze').addEventListener('click', () => {
+//     window.open('./prj/maze', '_blank');
+// })
+
+const mazez = document.querySelectorAll('.maze');
+mazez.forEach(m => {
+    m.addEventListener('click', () => {
+        window.open('./prj/maze', '_blank');
+    })
 })
 
 document.querySelector('.instapaper').addEventListener('click', () => {
@@ -68,8 +79,15 @@ document.querySelector('.alibaba').addEventListener('click', () => {
     window.open('./prj/allies', '_blank');
 })
 
-document.querySelector('.mealpal').addEventListener('click', () => {
-    window.open('./prj/mealpal', '_blank');
+// document.querySelector('.mealpal').addEventListener('click', () => {
+//     window.open('./prj/mealpal', '_blank');
+// })
+
+const mealz = document.querySelectorAll('.mealpal');
+mealz.forEach(m => {
+    m.addEventListener('click', () => {
+        window.open('./prj/mealpal', '_blank');
+    })
 })
 
 // document.querySelectorAll('.dribbble').addEventListener('click', () => {
