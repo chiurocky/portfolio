@@ -35,3 +35,8 @@ document.querySelector('.allies').addEventListener('click', () => {
     window.open('https://chiurocky.github.io/allies-proto/', '_blank');
 })
 
+// PROJECTS DETAILS
+
+document.querySelector('.maze').addEventListener('click', () => {
+    window.open('./pages/prj-maze.html', '_blank');
+})

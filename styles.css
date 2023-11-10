@@ -172,7 +172,8 @@ nav {
 }
 
 /* HERO */
-.main-container {
+.main-container,
+.main-details-container {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -320,26 +321,41 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
 
     & button {
         margin-top: 2rem;
-        width: 4.5rem;
+        width: 6.5rem;
     }
 
     & h1 {
         font-family: var(--font-primary);
         font-weight: 400;
         font-size: 3rem;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        margin-top: 4rem;
     }
 
     & p {
         font-family: var(--font-secondary);
         font-weight: 300;
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 2rem;
         margin-bottom: 3rem;
+    }
+
+    .details-img-container {
+        margin-top: 5rem;
+        background: var(--surface-primary);
+        border: 1px solid var(--border-primary);
+        border-radius: 1.5rem;
+        padding: 1rem;
+    }
+
+    & img {
+        
+        width: 100%;
     }
 
 }
