@@ -365,7 +365,7 @@ footer {
         margin-top: 5rem;
         background: var(--surface-primary);
         border: 1px solid var(--border-primary);
-        border-radius: 1.5rem;
+        border-radius: 1rem;
         padding: 1rem;
     }
 
@@ -396,6 +396,24 @@ footer {
     .projects-container {
         gap: .5rem;
         padding: 1rem;
+    }
+
+    .details {
+        width: 90%;
+
+        & p {
+            margin-bottom: 1rem;
+        }
+
+        & button {
+            margin-top: 0rem;
+        }
+    }
+
+    .details-img-container {
+        border-radius: 4px;
+        padding: .15rem;
+        margin-top: 1rem;
     }
 
     
