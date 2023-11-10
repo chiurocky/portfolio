@@ -297,6 +297,10 @@ nav {
     }
 }
 
+.cw-ixd {
+    background-color: black;
+}
+
 footer {
     display: flex;
     justify-content: center;

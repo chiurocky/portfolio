@@ -38,13 +38,17 @@ document.querySelector('.allies').addEventListener('click', () => {
 // PROJECTS DETAILS
 
 document.querySelector('.maze').addEventListener('click', () => {
-    window.open('./pages/prj-maze.html', '_blank');
+    window.open('./prj/maze.html', '_blank');
 })
 
 document.querySelector('.instapaper').addEventListener('click', () => {
-    window.open('./pages/prj-instapaper.html', '_blank');
+    window.open('./prj/instapaper.html', '_blank');
 })
 
 document.querySelector('.cw').addEventListener('click', () => {
-    window.open('./pages/prj-cw.html', '_blank');
+    window.open('./prj/cw.html', '_blank');
+})
+
+document.querySelector('.cw').addEventListener('click', () => {
+    window.open('./prj/alibaba', '_blank');
 })
