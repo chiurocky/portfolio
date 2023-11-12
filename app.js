@@ -28,15 +28,18 @@ themeToggleElem.addEventListener('click', () => {
 })
 
 document.querySelector('.assetdash').addEventListener('click', () => {
-    window.open('https://chiurocky.github.io/asset-dash/', '_blank');
+    window.location = 'https://chiurocky.github.io/asset-dash/';
+    // window.open('https://chiurocky.github.io/asset-dash/', '');
 })
 
 document.querySelector('.allies').addEventListener('click', () => {
-    window.open('./prj/allies.html', '_blank');
+    window.location = './prj/allies';
+    // window.open('./prj/allies.html', '');
 })
 
 document.querySelector('.allies-2').addEventListener('click', () => {
-    window.open('https://chiurocky.github.io/allies-proto/', '_blank');
+    window.location = 'https://chiurocky.github.io/allies-proto/';
+    // window.open('https://chiurocky.github.io/allies-proto/', '');
 })
 
 // PROJECTS DETAILS
@@ -45,12 +48,13 @@ document.querySelector('.allies-2').addEventListener('click', () => {
 //     window.open('https://chiurocky.github.io/portfolio/', '');
 // })
 
-// const rcIcons = document.querySelectorAll('.rc-icon');
-// rcIcons.forEach(i => {
-//     i.addEventListener('click', () => {
-//         window.open('https://chiurocky.github.io/portfolio/', '');
-//     })
-// })
+const rcIcons = document.querySelectorAll('.rc-icon');
+rcIcons.forEach(i => {
+    i.addEventListener('click', () => {
+        window.location = 'https://chiurocky.github.io/portfolio/';
+        // window.open('https://chiurocky.github.io/portfolio/', '');
+    })
+})
 
 // document.querySelector('.maze').addEventListener('click', () => {
 //     window.open('./prj/maze', '_blank');
@@ -59,24 +63,29 @@ document.querySelector('.allies-2').addEventListener('click', () => {
 const mazez = document.querySelectorAll('.maze');
 mazez.forEach(m => {
     m.addEventListener('click', () => {
-        window.open('./prj/maze', '_blank');
+        window.location = './prj/maze';
+        // window.open('./prj/maze', '');
     })
 })
 
 document.querySelector('.instapaper').addEventListener('click', () => {
-    window.open('./prj/instapaper', '_blank');
+    window.location = './prj/instapaper';
+    // window.open('./prj/instapaper', '');
 })
 
 document.querySelector('.cw').addEventListener('click', () => {
-    window.open('./prj/cw', '_blank');
+    window.location = './prj/cw';
+    // window.open('./prj/cw', '');
 })
 
 document.querySelector('.alibaba').addEventListener('click', () => {
-    window.open('./prj/alibaba', '_blank');
+    window.location = './prj/alibaba';
+    // window.open('./prj/alibaba', '');
 })
 
 document.querySelector('.alibaba').addEventListener('click', () => {
-    window.open('./prj/allies', '_blank');
+    window.location = './prj/allies';
+    // window.open('./prj/allies', '');
 })
 
 // document.querySelector('.mealpal').addEventListener('click', () => {
@@ -86,7 +95,8 @@ document.querySelector('.alibaba').addEventListener('click', () => {
 const mealz = document.querySelectorAll('.mealpal');
 mealz.forEach(m => {
     m.addEventListener('click', () => {
-        window.open('./prj/mealpal', '_blank');
+        window.location = './prj/mealpal';
+        // window.open('./prj/mealpal', '');
     })
 })
 
@@ -97,10 +107,12 @@ mealz.forEach(m => {
 const dribz = document.querySelectorAll('.dribbble');
 dribz.forEach(d => {
     d.addEventListener('click', () => {
-        window.open('https://dribbble.com/chiurocky', '_blank');
+        window.location = 'https://dribbble.com/chiurocky';
+        // window.open('https://dribbble.com/chiurocky', '');
     })
 })
 
 document.querySelector('.blender').addEventListener('click', () => {
-    window.open('./prj/blender-sculpt.html', '_blank');
+    window.location = './prj/blender-sculpt';
+    // window.open('./prj/blender-sculpt.html', '_blank');
 })
