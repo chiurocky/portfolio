@@ -83,7 +83,7 @@ document.querySelector('.alibaba').addEventListener('click', () => {
     // window.open('./prj/alibaba', '');
 })
 
-document.querySelector('.alibaba').addEventListener('click', () => {
+document.querySelector('.allies').addEventListener('click', () => {
     window.location = './prj/allies';
     // window.open('./prj/allies', '');
 })
