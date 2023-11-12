@@ -48,13 +48,13 @@ document.querySelector('.allies-2').addEventListener('click', () => {
 //     window.location('https://chiurocky.github.io/portfolio/', '');
 // })
 
-const rcIcons = document.querySelectorAll('.rc-icon-btn');
-rcIcons.forEach(i => {
-    i.addEventListener('click', () => {
-        window.location = 'https://chiurocky.github.io/portfolio/';
-        // window.open('https://chiurocky.github.io/portfolio/', '');
-    })
-})
+// const rcIcons = document.querySelectorAll('.rc-icon-btn');
+// rcIcons.forEach(i => {
+//     i.addEventListener('click', () => {
+//         window.location = 'https://chiurocky.github.io/portfolio/';
+//         // window.open('https://chiurocky.github.io/portfolio/', '');
+//     })
+// })
 
 // document.querySelector('.maze').addEventListener('click', () => {
 //     window.open('./prj/maze', '_blank');
