@@ -100,7 +100,7 @@ button {
     transition: transform 120ms ease-in-out;
 
     &:hover {
-        opacity: 80%;
+        opacity: 90%;
         transform: translateY(-2px);
     }
 }
@@ -129,13 +129,17 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    & button {
+        margin-top: 4px;
+        padding : 0;
+    }
 }
 
 .rc-icon {
     width: 40px;
     height: 40px;
     z-index: 3;
-    /* cursor: pointer; */
 }
 
 .right-nav {

@@ -45,10 +45,10 @@ document.querySelector('.allies-2').addEventListener('click', () => {
 // PROJECTS DETAILS
 
 // document.querySelector('.rc-icon').addEventListener('click', () => {
-//     window.open('https://chiurocky.github.io/portfolio/', '');
+//     window.location('https://chiurocky.github.io/portfolio/', '');
 // })
 
-const rcIcons = document.querySelectorAll('.rc-icon');
+const rcIcons = document.querySelectorAll('.rc-icon-btn');
 rcIcons.forEach(i => {
     i.addEventListener('click', () => {
         window.location = 'https://chiurocky.github.io/portfolio/';
