@@ -131,6 +131,7 @@ nav {
     gap: 1rem;
 
     & button {
+        background-color: transparent;
         margin-top: 4px;
         padding : 0;
     }
