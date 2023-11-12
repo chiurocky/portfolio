@@ -28,8 +28,8 @@ themeToggleElem.addEventListener('click', () => {
 })
 
 document.querySelector('.assetdash').addEventListener('click', () => {
-    window.location = 'https://chiurocky.github.io/asset-dash/';
-    // window.open('https://chiurocky.github.io/asset-dash/', '');
+    // window.location = 'https://chiurocky.github.io/asset-dash/';
+    window.open('https://chiurocky.github.io/asset-dash/', '');
 })
 
 document.querySelector('.allies').addEventListener('click', () => {
@@ -38,8 +38,8 @@ document.querySelector('.allies').addEventListener('click', () => {
 })
 
 document.querySelector('.allies-2').addEventListener('click', () => {
-    window.location = 'https://chiurocky.github.io/allies-proto/';
-    // window.open('https://chiurocky.github.io/allies-proto/', '');
+    // window.location = 'https://chiurocky.github.io/allies-proto/';
+    window.open('https://chiurocky.github.io/allies-proto/', '');
 })
 
 // PROJECTS DETAILS
@@ -107,8 +107,8 @@ mealz.forEach(m => {
 const dribz = document.querySelectorAll('.dribbble');
 dribz.forEach(d => {
     d.addEventListener('click', () => {
-        window.location = 'https://dribbble.com/chiurocky';
-        // window.open('https://dribbble.com/chiurocky', '');
+        // window.location = 'https://dribbble.com/chiurocky';
+        window.open('https://dribbble.com/chiurocky', '');
     })
 })
 
