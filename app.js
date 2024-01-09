@@ -126,3 +126,12 @@ document.querySelector('.blender').addEventListener('click', () => {
     window.location = './prj/blender-sculpt';
     // window.open('./prj/blender-sculpt.html', '_blank');
 })
+
+// SURPRISE 
+
+const linksArr = [
+    'https://nevalalee.wordpress.com/2016/04/05/the-coco-chanel-rule/',
+    'https://medium.com/designing-atlassian/when-design-becomes-a-cargo-cult-2bb9a50aad53',
+    'https://www.themarginalian.org/2019/07/09/emma-willard/',
+    'https://www.forbes.com/sites/forbesfinancecouncil/2017/10/19/on-building-a-faster-horse-design-thinking-for-disruption/?sh=433aa79149f9'
+]
