@@ -194,7 +194,8 @@ nav {
     & button {
         background: var(--surface-invert);
         border-bottom: 1px solid var(--border-secondary);
-        width: 9rem;
+        border-radius: 6px;
+        width: 9.5rem;
         font-weight: 400;
         font-size: .9rem;
         padding-right: 1.5rem;
@@ -225,7 +226,7 @@ nav {
         font-size: 1.25rem;
         line-height: 2rem;
         margin-bottom: 3rem;
-        max-width: 500px;
+        max-width: 560px;
     }
 
 }
@@ -235,8 +236,8 @@ nav {
 .theme-switcher {
     width: 3.8rem;
     height: 2rem;
-    background-color: var(--surface-tetiary);
-    border: 1px solid var(--border-secondary);
+    background-color: var(--surface-secondary);
+    border: 1px solid var(--border-primary);
     border-radius: 3rem;
     margin-left: 1rem;
     cursor: pointer;
