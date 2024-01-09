@@ -13,10 +13,10 @@
     --grey-8: #131313;
     --grey-9: #000000;
 
-    --brand-positive: green;
-    --brand-negative: red;
-    --brand-alert: yellow;
-    --brand-focus: rgb(0, 106, 255);
+    --brand-positive: rgb(29, 129, 71);
+    --brand-negative: #962828;
+    --brand-alert: #f7bc1b;
+    --brand-focus: rgb(33, 97, 186);
 }
 
 ::selection {
@@ -34,6 +34,7 @@
     --text-secondary: var(--grey-6);
     --text-tetiary: var(--grey-4);
     --text-invert: var(--grey-0);
+    --text-invert-secondary: var(--grey-2);
 
     --border-primary: var(--grey-2);
     ;
@@ -52,6 +53,7 @@
     --text-secondary: var(--grey-3);
     --text-tetiary: var(--grey-4);
     --text-invert: var(--grey-9);
+    --text-invert-secondary: var(--grey-8);
 
     --border-primary: var(--grey-8);
     --border-secondary: var(--grey-7);
@@ -190,10 +192,16 @@ nav {
     }
 
     & button {
-        background: var(--surface-tetiary);
-        color: var(--text-secondary);
+        background: var(--surface-invert);
         border-bottom: 1px solid var(--border-secondary);
         width: 9rem;
+        font-weight: 400;
+        font-size: .9rem;
+        padding-right: 1.5rem;
+
+        & a {
+            color: var(--text-invert-secondary);
+        }
     }
 }
 

@@ -78,6 +78,11 @@ document.querySelector('.cw').addEventListener('click', () => {
     // window.open('./prj/cw', '');
 })
 
+document.querySelector('.cw-desktop').addEventListener('click', () => {
+    window.location = './prj/cw';
+    // window.open('./prj/cw', '');
+})
+
 document.querySelector('.alibaba').addEventListener('click', () => {
     window.location = './prj/alibaba';
     // window.open('./prj/alibaba', '');
@@ -86,6 +91,10 @@ document.querySelector('.alibaba').addEventListener('click', () => {
 document.querySelector('.allies').addEventListener('click', () => {
     window.location = './prj/allies';
     // window.open('./prj/allies', '');
+})
+
+document.querySelector('.chase-pay').addEventListener('click', () => {
+    window.open('https://www.vox.com/2015/10/26/11620042/chase-announces-chase-pay-its-own-digital-wallet', '');
 })
 
 // document.querySelector('.mealpal').addEventListener('click', () => {
@@ -111,6 +120,7 @@ dribz.forEach(d => {
         window.open('https://dribbble.com/chiurocky', '');
     })
 })
+
 
 document.querySelector('.blender').addEventListener('click', () => {
     window.location = './prj/blender-sculpt';
