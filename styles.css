@@ -107,6 +107,7 @@ button {
     }
 }
 
+
 /* NAV */
 
 nav {
@@ -199,11 +200,17 @@ nav {
         font-weight: 400;
         font-size: .9rem;
         padding-right: 1.5rem;
+        color: var(--text-invert-secondary);
 
         & a {
             color: var(--text-invert-secondary);
         }
     }
+}
+
+.btn-secondary {
+    color: var(--text-secondary);
+    background-color: var(--surface-secondary);
 }
 
 .hero-container {
