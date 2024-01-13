@@ -143,11 +143,11 @@ nav {
     align-items: center;
     padding: 1rem 3rem;
     padding-top: 3.4rem;
+    padding-bottom: 2rem;
     font-family: var(--font-secondary);
     font-size: 1.25rem;
     font-weight: 500;
     background-color: var(--surface-primary);
-
 
     & p {
         font-family: var(--border-primary);
@@ -171,7 +171,6 @@ nav {
 .rc-icon {
     width: 40px;
     height: 40px;
-    z-index: 3;
 }
 
 .right-nav {
@@ -262,7 +261,6 @@ nav {
     padding-bottom: 5rem;
     gap: 2rem;
     background-color: var(--surface-primary);
-    
 
     & h1 {
         font-family: var(--font-secondary);
