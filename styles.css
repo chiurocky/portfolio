@@ -587,6 +587,12 @@ footer {
 
 /* PROJECT DETAILS projects.html */
 
+.main-details-container {
+    background-color: var(--surface-primary);
+    padding-bottom: 8rem;
+    border-bottom: 1px solid var(--border-primary);
+}
+
 .details {
     width: 80%;
     max-width: 900px;
@@ -600,6 +606,7 @@ footer {
     & button {
         margin-top: 2rem;
         width: 6.5rem;
+        border-bottom: 1px solid var(--border-primary);
     }
 
     & h1 {
@@ -638,6 +645,12 @@ footer {
         width: 100%;
     }
 
+}
+
+.details-body {
+    background-color: var(--surface-primary);
+    width: 100vw;
+    height: 100vh;
 }
 
 /* RESPONSIVE */
