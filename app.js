@@ -4,6 +4,7 @@ const toggleElem = document.querySelector('.toggle');
 function toggleHandler() {
     const lightIcon = themeToggleElem.querySelectorAll('.light-icon path');
     const darkIcon = themeToggleElem.querySelector('.dark-icon path');
+    const l1 = document.querySelector('.l1');
 
     if (document.body.classList.contains('dark')) {
         toggleElem.classList.remove('slideRight');
@@ -12,6 +13,7 @@ function toggleHandler() {
         lightIcon.forEach(p => p.setAttribute('fill', '#FF7F48'));
         document.body.classList.remove('dark');
         document.body.classList.add('light');
+        l1.style.overflow = 'visible';
     } else {
         toggleElem.classList.remove('slideLeft');
         toggleElem.classList.add('slideRight');
@@ -19,6 +21,7 @@ function toggleHandler() {
         lightIcon.forEach(p => p.setAttribute('fill', '#9F9F9F'));
         document.body.classList.remove('light');
         document.body.classList.add('dark');
+        l1.style.overflow = 'hidden';
     }
 }
 
@@ -122,10 +125,10 @@ dribz.forEach(d => {
 })
 
 
-document.querySelector('.blender').addEventListener('click', () => {
-    window.location = './prj/blender-sculpt';
-    // window.open('./prj/blender-sculpt.html', '_blank');
-})
+// document.querySelector('.blender').addEventListener('click', () => {
+//     window.location = './prj/blender-sculpt';
+//     // window.open('./prj/blender-sculpt.html', '_blank');
+// })
 
 // SURPRISE 
 
@@ -137,3 +140,26 @@ const linksArr = [
 ]
 
 
+// // SEATTLE TIME
+
+// function updateSeattleTime() {
+//     // Create a new Date object with the current time
+//     const currentTime = new Date();
+
+//     // Set the time zone to Pacific Time (UTC-8)
+//     currentTime.setHours(currentTime.getHours() - 8);
+
+//     // Format the time as HH:mm:ss
+//     const formattedTime = currentTime.toLocaleTimeString('en-US', { hour12: true });
+
+//     // Display the formatted time on the webpage
+//     document.getElementById('seattleTime').textContent = formattedTime;
+
+//     console.log(formattedTime);
+// }
+
+// // Update the time every second (1000 milliseconds)
+// setInterval(updateSeattleTime, 1000);
+
+// // Initial call to set the time immediately when the page loads
+// updateSeattleTime();

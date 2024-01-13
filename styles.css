@@ -27,7 +27,7 @@
 .light {
     --surface-primary: var(--grey-0);
     --surface-secondary: var(--grey-1);
-    --surface-tetiary: var(--grey-2);
+    --surface-tetiary: var(--grey-3);
     --surface-invert: var(--grey-9);
 
     --text-primary: var(--grey-9);
@@ -36,12 +36,23 @@
     --text-invert: var(--grey-0);
     --text-invert-secondary: var(--grey-2);
 
+    --border-neg: var(--grey-1);
     --border-primary: var(--grey-2);
-    ;
     --border-secondary: var(--grey-3);
     --border-tetiary: var(--grey-4);
 
-    transition: all 500ms ease;
+    transition: all 400ms ease;
+
+    --l1: var(--grey-0);
+    --l2: var(--grey-1);
+    --l3: var(--grey-2);
+    --l4: var(--grey-3);
+    --l5: var(--grey-4);
+    --l6: var(--grey-5);
+    --l7: var(--grey-6);
+    --l8: var(--grey-7);
+    --l9: var(--grey-8);
+    --l10: var(--grey-9);
 }
 
 .dark {
@@ -56,11 +67,23 @@
     --text-invert: var(--grey-9);
     --text-invert-secondary: var(--grey-8);
 
+    --border-neg: var(--grey-9);
     --border-primary: var(--grey-8);
-    --border-secondary: var(--grey-7);
-    --border-tetiary: var(--grey-6);
+    --border-secondary: var(--grey-6);
+    --border-tetiary: var(--grey-5);
 
-    transition: all 500ms ease;
+    --l1: var(--grey-9);
+    --l2: var(--grey-8);
+    --l3: var(--grey-7);
+    --l4: var(--grey-6);
+    --l5: var(--grey-5);
+    --l6: var(--grey-4);
+    --l7: var(--grey-3);
+    --l8: var(--grey-2);
+    --l9: var(--grey-1);
+    --l10: var(--grey-0);
+
+    transition: all 400ms ease;
 }
 
 *,
@@ -82,7 +105,7 @@ p {
 }
 
 body {
-    background-color: var(--surface-secondary);
+    background-color: var(--surface-primary);
     color: var(--text-primary);
     width: 100vw;
 }
@@ -120,12 +143,13 @@ nav {
     align-items: center;
     padding: 1rem 3rem;
     margin-top: 1.5rem;
-    font-family: var(--font-primary);
-    font-size: 1.75rem;
-    font-weight: 500;
+    font-family: var(--font-secondary);
+    font-size: 1.25rem;
+    font-weight: 600;
 
     & p {
         font-family: var(--border-primary);
+        color: var(--border-primary);
     }
 }
 
@@ -138,7 +162,7 @@ nav {
     & button {
         background-color: transparent;
         margin-top: 4px;
-        padding : 0;
+        padding: 0;
     }
 }
 
@@ -159,7 +183,7 @@ nav {
     width: 2rem;
     height: 2rem;
     background-color: var(--surface-primary);
-    border: 1px solid var(--border-primary);
+    border: 1px solid var(--border-neg);
     border-radius: 3rem;
 
     display: flex;
@@ -193,21 +217,6 @@ nav {
     & span {
         font-size: 1.1rem;
     }
-
-    & button {
-        background: var(--surface-invert);
-        border-bottom: 1px solid var(--border-secondary);
-        border-radius: 6px;
-        width: 9.5rem;
-        font-weight: 400;
-        font-size: .9rem;
-        padding-right: 1.5rem;
-        color: var(--text-invert-secondary);
-
-        & a {
-            color: var(--text-invert-secondary);
-        }
-    }
 }
 
 .surprise {
@@ -217,34 +226,213 @@ nav {
     color: var(--border-tetiary);
 }
 
+.btn-primary {
+    background: var(--surface-invert);
+    border-bottom: 1px solid var(--border-secondary);
+    border-radius: 6px;
+    width: 9.5rem;
+    height: 3.2rem;
+    font-weight: 400;
+    font-size: .9rem;
+    padding-right: 1.5rem;
+    color: var(--text-invert-secondary);
+    margin-right: .75rem;
+    margin-bottom: 1rem;
+
+    & a {
+        color: var(--text-invert-secondary);
+    }
+}
+
 .btn-secondary {
-    color: var(--text-secondary);
-    background-color: var(--surface-secondary);
+    background: var(--surface-secondary);
+    border-bottom: 1px solid var(--border-primary);
+    border-radius: 6px;
+    width: 10rem;
+    height: 3.2rem;
+    font-weight: 400;
+    font-size: .9rem;
+    padding-right: 1.5rem;
+
+    & a {
+        color: var(--text-secondary);
+    }
 }
 
 .hero-container {
-    width: 80%;
-    height: 500px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    max-width: 1600px;
+    padding: 8rem;
+    gap: 8rem;
 
     & h1 {
-        font-family: var(--font-primary);
-        font-weight: 400;
-        font-size: 4rem;
-        margin-bottom: 1rem;
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     & p {
         font-family: var(--font-secondary);
+        color: var(--text-tetiary);
         font-weight: 300;
-        font-size: 1.25rem;
-        line-height: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
         margin-bottom: 3rem;
-        max-width: 560px;
+    }
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-right {
+    width: 50%;
+    padding: 0 6rem;
+}
+
+.section-title-container {
+    width: 100vw;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & .section-title {
+        color: var(--border-secondary);
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+
+.work-history-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
+    gap: 3rem;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    max-width: 1600px;
+
+    & svg {
+        min-width: 300px;
+
+        & path {
+            fill: var(--border-secondary);
+        }
+    }
+}
+
+/* SPECTRUM */
+.spectrum-svg {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    bottom: 50%;
+    left: 50%;
+    mix-blend-mode: multiply;
+}
+
+.spectrum {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+.l1 {
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid var(--border-neg);
+    background-color: var(--l1); z-index: 0;
+    min-width: 300px;
+    max-height: 300px;
+}
+
+.l2 {
+    background-color: var(--l2);
+    z-index: 1;
+}
+
+.l3 {
+    background-color: var(--l3);
+    z-index: 2;
+}
+
+.l4 {
+    background-color: var(--l4);
+    z-index: 3;
+}
+
+.l5 {
+    background-color: var(--l5);
+    z-index: 4;
+}
+
+.l6 {
+    background-color: var(--l6);
+    z-index: 5;
+}
+
+.l7 {
+    background-color: var(--l7);
+    z-index: 6;
+}
+
+.l8 {
+    background-color: var(--l8);
+    z-index: 7;
+}
+
+.l9 {
+    background-color: var(--l9);
+    z-index: 8;
+}
+
+.l10 {
+    background-color: var(--l10);
+    z-index: 9;
+}
+
+
+/* Philosophy Section */
+
+.philosophy-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
+    gap: .75rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.principle {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--border-primary);
+    border-radius: .5rem;
+    transition: transform 120ms ease-in-out;
+    overflow: hidden;
+
+    padding: 3rem;
+
+    & img {
+        object-fit: cover;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 2rem;
     }
 
+    & h1 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: var(--text-secondary);
+    }
+
+    & p {
+        font-size: .85rem;
+        color: var(--text-tetiary);
+    }
 }
 
 /* Theme Toggle */
@@ -253,7 +441,7 @@ nav {
     width: 3.8rem;
     height: 2rem;
     background-color: var(--surface-secondary);
-    border: 1px solid var(--border-primary);
+    border: 1px solid var(--border-neg);
     border-radius: 3rem;
     margin-left: 1rem;
     cursor: pointer;
@@ -277,7 +465,7 @@ nav {
     width: 1.8rem;
     height: 1.8rem;
     background-color: var(--surface-primary);
-    border: 1px solid var(--border-primary);
+    border: 1px solid var(--border-neg);
     border-radius: 3rem;
     margin: 1px;
 }
@@ -301,6 +489,7 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
     gap: .75rem;
     padding: 2rem;
+    margin-bottom: 5rem;
 }
 
 .project {
@@ -373,10 +562,10 @@ footer {
     }
 
     & h1 {
-        font-family: var(--font-primary);
-        font-weight: 400;
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 3rem;
         margin-top: 4rem;
     }
 
@@ -411,6 +600,28 @@ footer {
 }
 
 /* RESPONSIVE */
+
+@media (max-width: 920px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .hero-left {
+        width: 100%;
+
+        & h1 {
+            font-size: 4.2rem;
+            line-height: 4.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .hero-right {
+        display: none;
+    }
+}
 
 @media (max-width: 460px) {
     nav {
@@ -450,5 +661,5 @@ footer {
         margin-top: 1rem;
     }
 
-    
+
 }
