@@ -656,6 +656,7 @@ footer {
 /* RESPONSIVE */
 
 @media (max-width: 920px) {
+
     .hero-container {
         display: flex;
         flex-direction: column;
@@ -692,6 +693,7 @@ footer {
     nav {
         padding: 1rem 2.5rem;
         padding-top: 3rem;
+        padding-bottom: 2rem;
     }
 
     .left-nav p {
