@@ -262,7 +262,7 @@ nav {
     padding-bottom: 5rem;
     gap: 2rem;
     background-color: var(--surface-primary);
-    z-index: -1;
+    
 
     & h1 {
         font-family: var(--font-secondary);
