@@ -400,7 +400,7 @@ nav {
 }
 
 .principle {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--surface-secondary);
     border: 1px solid var(--border-primary);
     border-radius: .5rem;
     transition: transform 120ms ease-in-out;
