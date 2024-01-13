@@ -105,7 +105,7 @@ p {
 }
 
 body {
-    background-color: var(--surface-primary);
+    background-color: var(--surface-secondary);
     color: var(--text-primary);
     width: 100vw;
 }
@@ -142,10 +142,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
-    margin-top: 1.5rem;
+    padding-top: 3.4rem;
     font-family: var(--font-secondary);
     font-size: 1.25rem;
     font-weight: 500;
+    background-color: var(--surface-primary);
+    
 
     & p {
         font-family: var(--border-primary);
@@ -253,11 +255,13 @@ nav {
 }
 
 .hero-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    max-width: 1600px;
     padding: 8rem;
-    gap: 8rem;
+    padding-bottom: 5rem;
+    background-color: var(--surface-primary);
+    z-index:-1;
 
     & h1 {
         font-family: var(--font-secondary);
@@ -277,12 +281,15 @@ nav {
 }
 
 .hero-left {
-    width: 50%;
+    width: 40%;
+    min-width: 400px;
+    max-width: 500px;
 }
 
 .hero-right {
-    width: 50%;
+    width: 60%;
     padding: 0 6rem;
+    max-width: 550px;
 }
 
 .section-title-container {
@@ -305,8 +312,10 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
     gap: 2rem;
     padding: 3rem;
+    padding-bottom: 5rem;
     margin-bottom: 5rem;
-    max-width: 1600px;
+    background-color: var(--surface-primary);
+    border-bottom: 1px solid var(--border-primary);
 
     & svg {
         width: 100%;
@@ -400,7 +409,7 @@ nav {
 }
 
 .principle {
-    background-color: var(--surface-secondary);
+    background-color: var(--surface-primary);
     border: 1px solid var(--border-primary);
     border-radius: .5rem;
     transition: transform 120ms ease-in-out;
