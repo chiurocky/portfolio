@@ -147,7 +147,7 @@ nav {
     font-size: 1.25rem;
     font-weight: 500;
     background-color: var(--surface-primary);
-    
+
 
     & p {
         font-family: var(--border-primary);
@@ -260,8 +260,9 @@ nav {
     justify-content: center;
     padding: 8rem;
     padding-bottom: 5rem;
+    gap: 2rem;
     background-color: var(--surface-primary);
-    z-index:-1;
+    z-index: -1;
 
     & h1 {
         font-family: var(--font-secondary);
@@ -346,7 +347,8 @@ nav {
     position: relative;
     border-radius: 8px;
     border: 1px solid var(--border-neg);
-    background-color: var(--l1); z-index: 0;
+    background-color: var(--l1);
+    z-index: 0;
     min-width: 300px;
     max-height: 300px;
 }
@@ -434,6 +436,43 @@ nav {
     & p {
         font-size: .85rem;
         color: var(--text-tetiary);
+    }
+}
+
+/* Skills Container */
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    padding: 3rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.skills-left {
+    width: 50%;
+
+    & p {
+        color: var(--text-tetiary);
+    }
+
+    & span {
+        color: var(--text-secondary);
+        font-weight: 600;
+    }
+
+}
+
+.skills-right {
+    width: 50%;
+
+    & p {
+        color: var(--text-tetiary);
+    }
+
+    & span {
+        color: var(--text-secondary);
+        font-weight: 600;
     }
 }
 
@@ -622,6 +661,15 @@ footer {
 
     .hero-right {
         display: none;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-left,
+    .skills-right {
+        width: 100%;
     }
 }
 
