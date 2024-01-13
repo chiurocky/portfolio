@@ -598,7 +598,7 @@ footer {
     .hero-container {
         display: flex;
         flex-direction: column;
-        padding: 5rem 3rem;
+        padding: 3rem;
     }
 
     .hero-left {
@@ -654,5 +654,13 @@ footer {
         margin-top: 1rem;
     }
 
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
 
+    .work-history-container {
+        padding: 1rem;
+        gap: 3rem;
+    }
 }
