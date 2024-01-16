@@ -648,6 +648,33 @@ footer {
         width: 100%;
     }
 
+    .btn-case-active {
+        margin-top: 1rem;
+        font-size: .75rem;
+        border-radius: 100px;
+        padding: .75rem 1rem;
+        padding-right: 1rem;
+        color: var(--text-tetiary);
+        border: 1px solid var(--border-primary);
+        background-color: var(--surface-primary);
+        width: 10rem;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    
+        & svg {
+            width: 20px;
+            height: 20px;
+        }
+    
+        &:hover {
+            background-color: var(--surface-invert);
+            color: var(--text-invert);
+        }
+    }
+
 }
 
 .details-body {
@@ -655,6 +682,7 @@ footer {
     width: 100vw;
     height: 100vh;
 }
+
 
 /* RESPONSIVE */
 
