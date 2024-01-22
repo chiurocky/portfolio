@@ -780,6 +780,16 @@ footer {
 
     .cases-container {
         flex-direction: column;
+
+        & img {
+            width: 95%;
+        }
+    
+        & svg {
+            width: 44px;
+            bottom: 2rem;
+            left: 3rem;
+        }
     }
 }
 
