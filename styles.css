@@ -869,3 +869,10 @@ footer {
         padding-bottom: 5rem;
     }
 }
+
+@media (min-width:1118px) and (max-width:1472px) {
+    .shodogg-history {
+        display: none;
+    }
+}
+
