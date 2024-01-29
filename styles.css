@@ -627,8 +627,13 @@ footer {
     }
 }
 
-.cs-cw { background-color: black; }
-.cs-chase { background-color: #095CFF; }
+.cs-cw {
+    background-color: black;
+}
+
+.cs-chase {
+    background-color: #095CFF;
+}
 
 .btn-cases {
     margin-top: 2rem;
@@ -724,17 +729,17 @@ footer {
         border: 1px solid var(--border-primary);
         background-color: var(--surface-primary);
         width: 10rem;
-    
+
         display: flex;
         justify-content: center;
         align-items: center;
         gap: .5rem;
-    
+
         & svg {
             width: 20px;
             height: 20px;
         }
-    
+
         &:hover {
             background-color: var(--surface-invert);
             color: var(--text-invert);
@@ -791,7 +796,7 @@ footer {
         & img {
             width: 95%;
         }
-    
+
         & svg {
             width: 44px;
             bottom: 2rem;
