@@ -47,7 +47,7 @@ document.querySelector('.allies-2').addEventListener('click', () => {
 
 document.querySelector('.cw-2').addEventListener('click', () => {
     // window.location = 'https://chiurocky.github.io/allies-proto/';
-    window.open('https://chiurocky.github.io/cw-proto/', '');
+    window.open('https://chiurocky.github.io/cw-proto-mobile/', '');
 })
 
 // PROJECTS DETAILS
