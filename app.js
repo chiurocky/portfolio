@@ -101,9 +101,9 @@ document.querySelector('.allies').addEventListener('click', () => {
     // window.open('./prj/allies', '');
 })
 
-document.querySelector('.chase-pay').addEventListener('click', () => {
-    window.open('https://www.vox.com/2015/10/26/11620042/chase-announces-chase-pay-its-own-digital-wallet', '');
-})
+// document.querySelector('.chase-pay').addEventListener('click', () => {
+//     window.open('https://www.vox.com/2015/10/26/11620042/chase-announces-chase-pay-its-own-digital-wallet', '');
+// })
 
 // document.querySelector('.mealpal').addEventListener('click', () => {
 //     window.open('./prj/mealpal', '_blank');
@@ -121,11 +121,19 @@ mealz.forEach(m => {
 //     window.open('https://dribbble.com/chiurocky', '_blank');
 // })
 
-const dribz = document.querySelectorAll('.dribbble');
-dribz.forEach(d => {
+// const dribz = document.querySelectorAll('.dribbble');
+// dribz.forEach(d => {
+//     d.addEventListener('click', () => {
+//         // window.location = 'https://dribbble.com/chiurocky';
+//         window.open('https://dribbble.com/chiurocky', '');
+//     })
+// })
+
+const chase = document.querySelectorAll('.chase');
+chase.forEach(d => {
     d.addEventListener('click', () => {
         // window.location = 'https://dribbble.com/chiurocky';
-        window.open('https://dribbble.com/chiurocky', '');
+        window.open('https://www.figma.com/proto/xBw7k9g6DkT6mmXO8MuCfB/Case-Studies-%2F-RC?page-id=383%3A603&type=design&node-id=383-675&viewport=471%2C393%2C0.08&t=qJtpKgBZ1zOai6WR-1&scaling=min-zoom&starting-point-node-id=383%3A675', '');
     })
 })
 
@@ -134,15 +142,6 @@ dribz.forEach(d => {
 //     window.location = './prj/blender-sculpt';
 //     // window.open('./prj/blender-sculpt.html', '_blank');
 // })
-
-// SURPRISE 
-
-const linksArr = [
-    'https://nevalalee.wordpress.com/2016/04/05/the-coco-chanel-rule/',
-    'https://medium.com/designing-atlassian/when-design-becomes-a-cargo-cult-2bb9a50aad53',
-    'https://www.themarginalian.org/2019/07/09/emma-willard/',
-    'https://www.forbes.com/sites/forbesfinancecouncil/2017/10/19/on-building-a-faster-horse-design-thinking-for-disruption/?sh=433aa79149f9'
-]
 
 
 // // SEATTLE TIME
