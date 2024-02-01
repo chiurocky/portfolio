@@ -709,7 +709,7 @@ footer {
         background: var(--surface-primary);
         border: 1px solid var(--border-primary);
         border-radius: 1rem;
-        padding: 1rem;
+        padding: 6px;
     }
 
     & img {
