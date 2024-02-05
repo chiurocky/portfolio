@@ -45,6 +45,11 @@ document.querySelector('.allies-2').addEventListener('click', () => {
     window.open('https://chiurocky.github.io/allies-proto/', '');
 })
 
+document.querySelector('.cw').addEventListener('click', () => {
+    // window.location = 'https://chiurocky.github.io/allies-proto/';
+    window.open('https://www.figma.com/proto/xBw7k9g6DkT6mmXO8MuCfB/Case-Studies-%2F-RC?page-id=0%3A1&type=design&node-id=1-100&viewport=510%2C483%2C0.07&t=Yrsxe8PTIfJf9PYd-1&scaling=min-zoom&starting-point-node-id=1%3A100&mode=design', '');
+})
+
 document.querySelector('.cw-2').addEventListener('click', () => {
     // window.location = 'https://chiurocky.github.io/allies-proto/';
     window.open('https://chiurocky.github.io/cw-proto-mobile/', '');
@@ -86,10 +91,10 @@ document.querySelector('.instapaper').addEventListener('click', () => {
     // window.open('./prj/instapaper', '');
 })
 
-document.querySelector('.cw').addEventListener('click', () => {
-    window.location = './prj/cw';
-    // window.open('./prj/cw', '');
-})
+// document.querySelector('.cw').addEventListener('click', () => {
+//     window.location = './prj/cw';
+//     // window.open('./prj/cw', '');
+// })
 
 // document.querySelector('.cw-desktop').addEventListener('click', () => {
 //     window.location = './prj/cw';
