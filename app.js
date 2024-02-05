@@ -55,6 +55,11 @@ document.querySelector('.cw-2').addEventListener('click', () => {
     window.open('https://chiurocky.github.io/cw-proto-mobile/', '');
 })
 
+document.querySelector('.cw-3').addEventListener('click', () => {
+    // window.location = 'https://chiurocky.github.io/allies-proto/';
+    window.open('https://chiurocky.github.io/cw-proto-desktop/', '');
+})
+
 // document.querySelector('.cw-3').addEventListener('click', () => {
 //     // window.location = 'https://chiurocky.github.io/asset-dash/';
 //     window.open('https://www.figma.com/proto/xBw7k9g6DkT6mmXO8MuCfB/Case-Studies-%2F-RC?page-id=518%3A17658&type=design&node-id=518-34266&viewport=815%2C422%2C0.1&t=59K0OdWt522iWqcI-1&scaling=min-zoom&starting-point-node-id=518%3A34266&show-proto-sidebar=1&mode=design', '');
