@@ -279,10 +279,10 @@ nav {
 
     & p {
         font-family: var(--font-secondary);
-        color: var(--text-secondary);
+        color: var(--text-primary);
         font-weight: 300;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1.25rem;
+        line-height: 1.95rem;
         margin-bottom: 3rem;
     }
 }
