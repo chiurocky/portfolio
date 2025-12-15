@@ -116,6 +116,16 @@ document.querySelector('.allies').addEventListener('click', () => {
     // window.open('./prj/allies', '');
 })
 
+document.querySelector('.rh-perps').addEventListener('click', () => {
+    window.open('https://www.figma.com/design/xBw7k9g6DkT6mmXO8MuCfB/Case-Studies---RC?node-id=1377-882&t=V4RTZVjlfYG3wpvU-1', '');
+    // window.open('./prj/allies', '');
+})
+
+document.querySelector('.rh-qtrade').addEventListener('click', () => {
+    window.open('https://www.figma.com/design/xBw7k9g6DkT6mmXO8MuCfB/Case-Studies---RC?node-id=1392-22860&t=V4RTZVjlfYG3wpvU-1', '');
+    // window.open('./prj/allies', '');
+})
+
 // document.querySelector('.chase-pay').addEventListener('click', () => {
 //     window.open('https://www.vox.com/2015/10/26/11620042/chase-announces-chase-pay-its-own-digital-wallet', '');
 // })
