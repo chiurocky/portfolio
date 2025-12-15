@@ -230,7 +230,7 @@ nav {
 .btn-primary {
     background: var(--surface-invert);
     /* border-bottom: 1px solid var(--border-secondary); */
-    border-radius: 6px;
+    border-radius: 600px;
     width: 9.5rem;
     height: 3.2rem;
     font-weight: 400;
@@ -248,7 +248,7 @@ nav {
 .btn-secondary {
     background: var(--surface-primary);
     border: 1px solid var(--border-primary);
-    border-radius: 8px;
+    border-radius: 600px;
     width: 10rem;
     height: 3.2rem;
     font-weight: 400;
@@ -549,7 +549,7 @@ nav {
 
     background-color: var(--surface-primary);
     border: 1px solid var(--border-primary);
-    border-radius: .5rem;
+    border-radius: 1.5rem;
     transition: transform 120ms ease-in-out;
     cursor: pointer;
     overflow: hidden;
